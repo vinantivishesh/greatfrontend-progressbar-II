@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+.progress {
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background: #d3d3d3c7;
+  overflow: hidden;
+}
+
+.percents {
+  background-color: green;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition-duration: 2000ms;
+  transition-timing-function: linear;
+}
+
+.percents--filled {
+  transform: scaleX(1);
+}
+
+.group-progress {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
